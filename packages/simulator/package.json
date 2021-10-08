@@ -1,0 +1,27 @@
+{
+  "name": "simulator",
+  "version": "1.0.0",
+  "description": "Simulate Acme Corp Backend Services",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node bin/start.ts",
+    "watch": "nodemon"
+  },
+  "author": "Charles Lowell <cowboyd@frontside.io>",
+  "license": "ISC",
+  "devDependencies": {
+    "@frontside/tsconfig": "^1.2.0",
+    "@frontside/graphgen": "^1.1.0",
+    "@simulacrum/auth0-cypress": "file:../../../simulacrum/integrations/cypress",
+    "@simulacrum/auth0-simulator": "file:../../../simulacrum/packages/auth0",
+    "@simulacrum/ldap-simulator": "file:../../../simulacrum/packages/ldap",
+    "@simulacrum/server": "file:../../../simulacrum/packages/server",
+    "@types/faker": "5.5.8",
+    "@types/seedrandom": "3.0.1",
+    "faker": "5.5.3",
+    "effection": "^2.0.0-beta.22",
+    "nodemon": "latest",
+    "seedrandom": "3.0.5",
+    "typescript": "^4.4.3"
+  }
+}
