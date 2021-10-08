@@ -30,8 +30,8 @@ function setAnnotations(entity: UserEntity, entry: SearchEntry, vendor: LdapVend
 }
 
 function setProfileProps(entity: UserEntity, entry: SearchEntry, vendor: LdapVendor, map: UserConfig['map']) {
-  for (const prop of ['displayName', 'email'] as const) {
-    mapStringAttr(entry, vendor, map.rdn, v => {
+  for (const prop of ['displayName', 'email', 'picture'] as const) {
+    mapStringAttr(entry, vendor, map[prop], v => {
       if (!entity.spec.profile) {
         return;
       }

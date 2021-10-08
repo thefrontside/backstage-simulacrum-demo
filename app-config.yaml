@@ -81,7 +81,11 @@ catalog:
             map:
               rdn: 'uid'
               name: 'uid'
-              displayName: 'cn'
+              displayName: 'displayName'
+              picture: 'avatar'
+              email: 'email'
+              state: 'l'
+              country: 'co'
             paged: true
           groups:
             dn: ou=groups,dc=org.com

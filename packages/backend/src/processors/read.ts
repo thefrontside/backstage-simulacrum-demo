@@ -12,20 +12,20 @@ export async function readLdapUsers(
   searchCallBack: (entity: Entity) => void,
   opts: { transformer: UserTransformer; logger: Logger },
 ): Promise<void> {
-  let { logger, transformer } = opts;
+  const { logger, transformer } = opts;
 
-  let { dn, options, map } = config;
-  let vendor = await client.getVendor();
+  const { dn, options, map } = config;
+  const vendor = await client.getVendor();
 
-  let userMemberOf: Map<string, Set<string>> = new Map();
+  const userMemberOf: Map<string, Set<string>> = new Map();
 
   logger.info(`starting search for ${dn}`);
 
   await client.searchStreaming(dn, options, async user => {
-    let { map } = config;
+    const { map } = config;
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let entity = await transformer(vendor, { map } as any, user);
+    const entity = await transformer(vendor, { map } as any, user);
 
     if (!entity) {
       return;
@@ -46,8 +46,8 @@ function mapReferencesAttr(
   setter: (sourceDn: string, targets: string[]) => void,
 ) {
   if (attributeName) {
-    let values = vendor.decodeStringAttribute(entry, attributeName);
-    let dn = vendor.decodeStringAttribute(entry, vendor.dnAttributeName);
+    const values = vendor.decodeStringAttribute(entry, attributeName);
+    const dn = vendor.decodeStringAttribute(entry, vendor.dnAttributeName);
     if (values && dn && dn.length === 1) {
       setter(dn[0], values);
     }
@@ -61,7 +61,7 @@ function ensureItems(target: Map<string, Set<string>>, key: string, values: stri
       set = new Set();
       target.set(key, set);
     }
-    for (let value of values) {
+    for (const value of values) {
       if (value) {
         set.add(value);
       }

@@ -8,20 +8,20 @@ This is your newly scaffolded Backstage App, Good Luck!
 Before start the app do some preparations in simulacrum dir:
 
 ```sh
-npm install
-npm run build
-cd packages/auth0 && npm link
-cd packages/ldap && npm link
-cd packages/server && npm link
-cd integrations/cypress && npm install && npm run build && npm link
+yarn install
+yarn run build
+cd packages/auth0 && yarn link
+cd packages/ldap && yarn link
+cd packages/server && yarn link
+cd integrations/cypress && yarn install && yarn run build && yarn link
 ```
 
 To start the app:
 
 ```sh
-npm install
-npm run build
-npm start
+yarn install
+yarn run build
+yarn start
 ````
 
 The last command starts simulation server and backstage backend

@@ -24,7 +24,7 @@ export class LdapProcessor implements CatalogProcessor {
       userTransformer: UserTransformer;
     },
   ): LdapProcessor {
-    let c = config.getOptionalConfig('catalog.processors.ldapOrg');
+    const c = config.getOptionalConfig('catalog.processors.ldapOrg');
 
     return new LdapProcessor({
       ...options,
@@ -47,7 +47,7 @@ export class LdapProcessor implements CatalogProcessor {
       return false;
     }
 
-    let provider = this.providers.find(p => location.target === p.target);
+    const provider = this.providers.find(p => location.target === p.target);
     
     if (!provider) {
       throw new Error(
@@ -57,10 +57,12 @@ export class LdapProcessor implements CatalogProcessor {
 
     this.logger.info('Reading LDAP users and groups');
 
-    let client = await LdapClient.create(this.logger, provider.target, provider.bind);
+    const client = await LdapClient.create(this.logger, provider.target, provider.bind);
 
-    let searchCallback = (entity: Entity): void => {
+    const searchCallback = (entity: Entity): void => {
       this.logger.info(`processing ldap user ${entity.metadata.name}`);
+
+      console.dir({entity}, {depth: 33})
 
       emit(results.entity({ ...location, target: provider.target }, entity));
     };
