@@ -84,8 +84,6 @@ catalog:
               displayName: 'displayName'
               picture: 'avatar'
               email: 'email'
-              state: 'l'
-              country: 'co'
             paged: true
           groups:
             dn: ou=groups,dc=org.com
