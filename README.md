@@ -1,27 +1,20 @@
 # [Backstage](https://backstage.io)
 
-This is your newly scaffolded Backstage App, Good Luck!
+Backstage application with [@simulacrum](https://github.com/thefrontside/simulacrum) simulating [auth0](https://github.com/thefrontside/simulacrum/tree/v0/packages/auth0) and [ldap](https://github.com/thefrontside/simulacrum/tree/v0/packages/ldap).
 
-**NOTE**: `backstage-cli` uses `yarn.lock` for some reason at the end of backend build run.
-**NOTE**: Clone this repo near your `simulacrum` repo dir
+## Prerequisites
 
-Before start the app do some preparations in simulacrum dir:
+[mkcert]() is required for running a self-signed ssl certificate from localhost.
 
-```sh
-yarn install
-yarn run build
-cd packages/auth0 && yarn link
-cd packages/ldap && yarn link
-cd packages/server && yarn link
-cd integrations/cypress && yarn install && yarn run build && yarn link
-```
+Setup instructions are [here](https://github.com/thefrontside/simulacrum/blob/5bd797f68a0c33a4d8c98dc7f2b7a1d2526fa699/packages/ui/README.md#running-https-services-from-localhost).
+
+## Quick Start
 
 To start the app:
 
 ```sh
 yarn install
-yarn run build
 yarn start
 ````
 
-The last command starts simulation server and backstage backend
+The last command starts simulation server, backstage backend and backstage frontend.

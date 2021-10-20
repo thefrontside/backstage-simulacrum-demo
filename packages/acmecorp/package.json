@@ -4,8 +4,8 @@
   "description": "Simulate Acme Corp Backend Services",
   "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node bin/start.ts",
-    "watch": "PORT=5000 nodemon",
+    "start": "PORT=4000 ts-node bin/start.ts",
+    "watch": "PORT=4000 nodemon",
     "test": "echo noop",
     "prepack": "tsc",
     "lint": "eslint src bin"
