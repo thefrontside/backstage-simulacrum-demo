@@ -1,4 +1,3 @@
-import { Button } from '@interactors/with-cypress';
 import config from '../../cypress.env.json';
 
 describe('log in', () => {
