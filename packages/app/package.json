@@ -26,6 +26,7 @@
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@simulacrum/auth0-simulator": "^0.3.0",
+    "@simulacrum/auth0-cypress": "^0.2.2",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
