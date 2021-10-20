@@ -15,6 +15,9 @@ main(function*() {
     services: {
       auth0: {
         port: 4400
+      },
+      ldap: {
+        port: 999,
       }
     }
   });

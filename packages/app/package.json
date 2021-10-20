@@ -50,7 +50,7 @@
     "start": "backstage-cli app:serve",
     "start:auth0": "PORT=4000 ../../node_modules/@simulacrum/auth0-simulator/bin/index.js",
     "start:backend": "yarn workspace backend run start",
-    "start:all": "concurrently \"yarn run start\" \"yarn run start:backend\"",
+    "start:all": "concurrently \"yarn run start\" \"yarn workspace backend run start\"",
     "build": "backstage-cli app:build",
     "test": "backstage-cli test",
     "lint": "backstage-cli lint",

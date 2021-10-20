@@ -53,7 +53,6 @@ export function createAcmecorpSimulationServer(): Resource<Server> {
           audience: "https://thefrontside.auth0.com/api/v1/",
           clientId: "YOUR_AUTH0_CLIENT_ID",
           scope: "openid profile email offline_access",
-          port: 4400
         });
 
         let ldap = ldapSimulator(state, {
