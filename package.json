@@ -19,7 +19,7 @@
     "test": "lerna run test --since origin/master -- --coverage",
     "test:all": "lerna run test -- --coverage",
     "lint": "lerna run lint --since origin/master --",
-    "test:e2e": "concurrently \"yarn run start:all\" \"yarn run cy:run -w app\"",
+    "test:e2e": "concurrently \"yarn run start:all\" \"yarn workspace app run cy:run\"",
     "lint:all": "lerna run lint --",
     "prettier:check": "prettier --check .",
     "create-plugin": "backstage-cli create-plugin --scope internal --no-private",
