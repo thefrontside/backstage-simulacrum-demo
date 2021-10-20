@@ -63,12 +63,12 @@ export function createAcmecorpSimulationServer(): Resource<Server> {
           bindDn: "admin@org.com",
           bindPassword: "password",
           groupDN:"ou=groups,dc=org.com"
-        })
+        });
 
         return {
           services: {
             ...auth0.services,
-            ...ldap.services,
+            ...ldap.services
           },
           scenarios: {}
         };

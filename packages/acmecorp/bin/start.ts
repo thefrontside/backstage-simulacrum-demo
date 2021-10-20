@@ -11,7 +11,13 @@ main(function*() {
 
   let client = createClient(url);
 
-  let simulation = yield client.createSimulation("acmecorp");
+  let simulation = yield client.createSimulation("acmecorp", {
+    services: {
+      auth0: {
+        port: 4400
+      }
+    }
+  });
 
   console.dir({ simulation }, { depth: 3 });
 

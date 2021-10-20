@@ -2190,18 +2190,6 @@
   dependencies:
     "@date-io/core" "^1.3.13"
 
-"@effection/atom@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/@effection/atom/-/atom-2.0.0-beta.9.tgz"
-  integrity sha512-0b+UkJfpnypaS+AJlotuw+00GigATNTE4MKUFFqJUW1CS2h8tcnfxq+SvYq543AlP8T8DhqoHU+7JViue73Hxg==
-  dependencies:
-    "@effection/channel" "2.0.0-beta.9"
-    "@effection/core" "2.0.0-beta.8"
-    "@effection/subscription" "2.0.0-beta.9"
-    assert-ts "^0.2.2"
-    fp-ts "^2.8.2"
-    monocle-ts "^2.3.3"
-
 "@effection/atom@^2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@effection/atom/-/atom-2.0.1.tgz#e1ec9b24f84e7d32304f76c9d289cba0d099d851"
@@ -2212,15 +2200,6 @@
     fp-ts "^2.8.2"
     monocle-ts "^2.3.3"
 
-"@effection/channel@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/@effection/channel/-/channel-2.0.0-beta.9.tgz"
-  integrity sha512-5KPLvx5ruoWGYrkyxU68G2g8Rl25PJuubX9SLvOjBU2xDww3ZZwsTJW2wv2WF6lZV0Tnt1XyEPLeuStvY3o7kw==
-  dependencies:
-    "@effection/core" "2.0.0-beta.8"
-    "@effection/events" "2.0.0-beta.9"
-    "@effection/subscription" "2.0.0-beta.9"
-
 "@effection/channel@2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@effection/channel/-/channel-2.0.1.tgz#69d03ab16b5a0e70537c9db781dc10062f29b781"
@@ -2230,23 +2209,10 @@
     "@effection/events" "2.0.1"
     "@effection/stream" "2.0.1"
 
-"@effection/core@2.0.0-beta.8":
-  version "2.0.0-beta.8"
-  resolved "https://registry.npmjs.org/@effection/core/-/core-2.0.0-beta.8.tgz"
-  integrity sha512-14u4fFn9ZO/cj0jiY7qvLoiNWJh55hu0HnSVPS5zjg9EBXTG4DWbHdP7xWTwnmYoU0/c6fx4rp7XsznJOBEa5w==
-
 "@effection/core@2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@effection/core/-/core-2.0.1.tgz#f200e4df020666ec5dc232da3057bafb63aa19af"
   integrity sha512-Bl2pfu9gbTwlieTgcEhFOwz70QDPXpyVRuOiOqccGVBvZpa3/mzepH6LFZSCyothnc7YO0b31xXV551POiLEow==
-
-"@effection/events@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/@effection/events/-/events-2.0.0-beta.9.tgz"
-  integrity sha512-vVkUaN109fOkskhu+ha2z0ZrWbR94NrASxBMbnxP8WDF5WlOl8X3BNzSWbISQy5Zu9inQxsfB87f46YyndBfOQ==
-  dependencies:
-    "@effection/core" "2.0.0-beta.8"
-    "@effection/subscription" "2.0.0-beta.9"
 
 "@effection/events@2.0.1":
   version "2.0.1"
@@ -2266,15 +2232,6 @@
     cross-fetch "^3.0.4"
     node-fetch "^2.6.1"
 
-"@effection/main@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/@effection/main/-/main-2.0.0-beta.9.tgz"
-  integrity sha512-2qeuEt4wjwXScFr+m6DzMKyEAV+ieNcEUSwgMTsTk8e/la6710Ql0vFNZYRRWF5S7kVp1wXpwKUcrPPaCZYIlA==
-  dependencies:
-    "@effection/core" "2.0.0-beta.8"
-    chalk "^4.1.1"
-    stacktrace-parser "^0.1.10"
-
 "@effection/main@2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@effection/main/-/main-2.0.1.tgz#becbaf0b28665e401b05e429d4cad8c2c5c84ee2"
@@ -2283,19 +2240,6 @@
     "@effection/core" "2.0.1"
     chalk "^4.1.2"
     stacktrace-parser "^0.1.10"
-
-"@effection/process@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/@effection/process/-/process-2.0.0-beta.9.tgz"
-  integrity sha512-aN89+JaeMf/n6NjdF/MtHMTYM6eX1pBCsAdHRwf/fI+lBW9/FIq1OXujRCHMKnFjYmLAivX6+tU9xm4wMluAow==
-  dependencies:
-    "@effection/channel" "2.0.0-beta.9"
-    "@effection/core" "2.0.0-beta.8"
-    "@effection/events" "2.0.0-beta.9"
-    "@effection/subscription" "2.0.0-beta.9"
-    cross-spawn "^7.0.3"
-    ctrlc-windows "^2.0.0"
-    shellwords "^0.1.1"
 
 "@effection/process@^2.0.1":
   version "2.0.1"
@@ -2314,13 +2258,6 @@
   dependencies:
     "@effection/core" "2.0.1"
     "@effection/subscription" "2.0.1"
-
-"@effection/subscription@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/@effection/subscription/-/subscription-2.0.0-beta.9.tgz"
-  integrity sha512-vjIshwyROb4mzYCD2qNp0CSMy6ysmTKwvagKz6r8qShip7OSgq8j7y0q4swT7NpFCEuycSlYHtptRX5BQbN97Q==
-  dependencies:
-    "@effection/core" "2.0.0-beta.8"
 
 "@effection/subscription@2.0.1":
   version "2.0.1"
@@ -3969,23 +3906,6 @@
   resolved "https://registry.npmjs.org/@sideway/pinpoint/-/pinpoint-2.0.0.tgz"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
-"@simulacrum/auth0-simulator@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.npmjs.org/@simulacrum/auth0-simulator/-/auth0-simulator-0.2.3.tgz"
-  integrity sha512-Fp75Bedu3J0WjfghatjKxwnsfbuTrV8WF7N6n9zsI4HQcqV8o5qGenmBmD6MmnVwIdlXMfAojD11Cr7j8Vo7pA==
-  dependencies:
-    "@effection/process" "2.0.0-beta.9"
-    "@simulacrum/server" "0.3.2"
-    "@types/faker" "^5.1.7"
-    assert-ts "^0.3.2"
-    base64-url "^2.3.3"
-    cookie-session "^1.4.0"
-    dedent "^0.7.0"
-    effection "2.0.0-beta.9"
-    html-entities "^2.3.2"
-    jsesc "^3.0.2"
-    jsonwebtoken "^8.5.1"
-
 "@simulacrum/auth0-simulator@^0.3.0":
   version "0.3.0"
   resolved "https://registry.npmjs.org/@simulacrum/auth0-simulator/-/auth0-simulator-0.3.0.tgz#bf9362fcafb3c8b36f447f4e58645ff4b0ac0bd7"
@@ -4003,6 +3923,15 @@
     jsesc "^3.0.2"
     jsonwebtoken "^8.5.1"
 
+"@simulacrum/client@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.npmjs.org/@simulacrum/client/-/client-0.5.2.tgz#dd779a56a7c95d43d60e3c4491d77de71fa05259"
+  integrity sha512-r0ytECYZZTKpQJYed9OtMcqsmPB2i/SFYqT+Cr2Gt3vK5ytl1+v+i5mIPQB2d1ZvyF98amP4mBe1PhgfQP6pGQ==
+  dependencies:
+    effection "^2.0.1"
+    graphql-ws "^4.2.3"
+    isomorphic-ws "^4.0.1"
+
 "@simulacrum/ldap-simulator@^0.2.0":
   version "0.2.0"
   resolved "https://registry.npmjs.org/@simulacrum/ldap-simulator/-/ldap-simulator-0.2.0.tgz#6b611d44dbd1460bdeb0c6c1a3412e3b82e4cde2"
@@ -4012,28 +3941,6 @@
     get-port "5.1.1"
     ldapjs "^2.3.1"
     seedrandom "^3.0.5"
-
-"@simulacrum/server@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/@simulacrum/server/-/server-0.3.2.tgz"
-  integrity sha512-qveGyX1b4mled+fb5F3+f7vKwXn/5l2pB+2s37P/wDsZNBdgwWM6gM9bP0bxe2xjPd20oarr7QKqDqZP5TYCYg==
-  dependencies:
-    "@effection/atom" "2.0.0-beta.9"
-    "@effection/process" "2.0.0-beta.9"
-    "@simulacrum/ui" "0.2.0"
-    "@types/faker" "^5.1.7"
-    assert-ts "^0.3.2"
-    cors "^2.8.5"
-    effection "2.0.0-beta.9"
-    express "^4.17.1"
-    express-graphql "^0.12.0"
-    faker "^5.5.0"
-    get-port "^5.1.1"
-    graphql "^15.5.0"
-    graphql-ws "^4.2.3"
-    nexus "^1.0.0"
-    uuid "^8.3.2"
-    ws "^7.4.4"
 
 "@simulacrum/server@0.4.0", "@simulacrum/server@^0.4.0":
   version "0.4.0"
@@ -4056,11 +3963,6 @@
     nexus "^1.0.0"
     uuid "^8.3.2"
     ws "^7.4.4"
-
-"@simulacrum/ui@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/@simulacrum/ui/-/ui-0.2.0.tgz"
-  integrity sha512-omszRAgoH8ByjzS7/cDItlrYoPZBCULeVjddd82Dwg4xF6gY9g/m6ZVlM2TN+52w+JW9Rzyamb2qYx82v1yTIw==
 
 "@simulacrum/ui@0.3.0":
   version "0.3.0"
@@ -8432,17 +8334,6 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-effection@2.0.0-beta.9:
-  version "2.0.0-beta.9"
-  resolved "https://registry.npmjs.org/effection/-/effection-2.0.0-beta.9.tgz"
-  integrity sha512-21mQ4bUKrqf4mgR826wuapn2b94NhFzw33nYnZkW+phTM3o5u7qGFa2NS+NXJUDEHG59jh7YlWHLvzcYyeggew==
-  dependencies:
-    "@effection/channel" "2.0.0-beta.9"
-    "@effection/core" "2.0.0-beta.8"
-    "@effection/events" "2.0.0-beta.9"
-    "@effection/main" "2.0.0-beta.9"
-    "@effection/subscription" "2.0.0-beta.9"
-
 effection@2.0.1, effection@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/effection/-/effection-2.0.1.tgz#6063a17afb0bdaee30cc4c94cdffdb2a6cab08af"
@@ -11540,6 +11431,11 @@ isomorphic-git@^1.8.0:
     readable-stream "^3.4.0"
     sha.js "^2.4.9"
     simple-get "^3.0.2"
+
+isomorphic-ws@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/isomorphic-ws/-/isomorphic-ws-4.0.1.tgz#55fd4cd6c5e6491e76dc125938dd863f5cd4f2dc"
+  integrity sha512-BhBvN2MBpWTaSHdWRb/bwdZJ1WaehQ2L1KngkCkfLUGF0mAWAT1sQUQacEmQ0jXkFw/czDXPNQSL5u2/Krsz1w==
 
 isstream@~0.1.2:
   version "0.1.2"
